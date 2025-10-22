@@ -143,7 +143,7 @@ void novo_jogo() {
     fgets(nome, MAX, stdin);
     nome[strcspn(nome, "\n")] = 0; // Remove newline character
     criar_PERFIL(&User, nome);
-    printf("Lembrando que apenas partidas de duracao padrao - 12 rodadas - sao contabilizadas no ranking.\n");
+    printf("Lembrando que apenas partidas de duracao padrao - 6 rodadas - sao contabilizadas no ranking.\n");
     printf("Digite o numero de rodadas [1 - 12]: ");
     User.Rodadas = escolher_Opcao(1, 12);
 
@@ -636,7 +636,7 @@ void ranquear_jogadores() {
         //Usuario: %s | Rodadas: %d | Pontuacao: %d 
         sscanf(linha, "Usuario: %[^|]| Rodadas: %d | Pontuacao: %d", nome, &rounds, &pontos);
 
-        if(rounds != 12) continue; // Se tiver menos que 12 rodadas nao merece entrar no ranking
+        if(rounds != 6) continue; // Se tiver menos que 12 rodadas nao merece entrar no ranking
 
         bool encontrado = false;
         
@@ -679,7 +679,7 @@ void ranquear_jogadores() {
     printf("|         Ranking dos Jogadores:         |\n");
     printf("------------------------------------------\n\n");
     for (int i = 0; i < n_jogadores; i++) {
-        printf("[%s] \nL> |Record: %d| - Media: %d - P.Total: %d - Partidas: %d \n", jogadores[i].nome, jogadores[i].record, (jogadores[i].pontos)/(jogadores[i].rounds/12), jogadores[i].pontos, (jogadores[i].rounds)/12);
+        printf("[%s] \nL> |Record: %d| - Media: %d - P.Total: %d - Partidas: %d \n", jogadores[i].nome, jogadores[i].record, (jogadores[i].pontos)/(jogadores[i].rounds/6), jogadores[i].pontos, (jogadores[i].rounds)/6);
     }   
     limpar_buffer();
     char press;
