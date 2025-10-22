@@ -1,11 +1,11 @@
 # Dicerino: Jogo de Dados em C
 
-## 🎲 Sobre o Projeto
+## Sobre o Projeto
 Dicerino é um jogo de dados desenvolvido em linguagem C, inspirado em clássicos como Yahtzee. Ele mistura elementos de sorte e estratégia, combinando as combinações de mãos do pôquer com o preenchimento de uma cartela de pontuação, similar ao bingo.
 
 Este projeto foi desenvolvido como trabalho final da disciplina de Programação de Computadores 2, com o objetivo de aplicar de forma prática os principais conceitos de programação em C aprendidos em sala de aula, como estruturas de dados, alocação dinâmica e manipulação de arquivos.
 
-## ✨ Funcionalidades
+## Funcionalidades
 Menu Interativo: Navegue facilmente entre Iniciar um Novo Jogo, ver o Histórico de Partidas ou consultar o Ranking.
 
 Jogabilidade Clássica: Você tem 3 rolagens por rodada para tentar formar a melhor combinação de 5 dados.
@@ -20,7 +20,7 @@ Histórico Persistente: Todas as partidas são salvas automaticamente em um arqu
 
 Ranking de Jogadores: O jogo calcula e exibe um ranking baseado na maior pontuação (recorde) obtida em partidas de 6 rodadas (duração padrão).
 
-## 💡 Conceitos Aplicados
+## Conceitos Aplicados
 Este projeto foi uma oportunidade para implementar e consolidar diversos conceitos fundamentais da linguagem C:
 
 Estruturas de Dados (struct): Utilizadas para modelar a CARTELA (cartela de pontuação), o PERFIL do jogador e os COMBOS de pontuação.
